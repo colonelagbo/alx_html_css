@@ -1,1 +1,297 @@
+html {
+  font-family: sans-serif;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
 
+nav a {
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav-and-section1 {
+  background-image: url("./images/Object.png");
+  padding: 10px 80px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  object-fit: contain;
+}
+
+.teacher-profiles {
+  display: flex;
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-heading {
+  font-size: 80px;
+  color: white;
+  margin-bottom: 10px;
+}
+.heading-catch {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.heading-catch span {
+  margin: 0 8px;
+}
+
+.register-btn {
+  color: white;
+  background-color: blueviolet;
+  padding: 15px 12px;
+  border-radius: 20px;
+  margin-top: 30px;
+  border: 0;
+}
+
+.main-catch {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teachers {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+.teachers h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+}
+.teachers h2 span {
+  color: blueviolet;
+}
+.teacher-profiles div {
+  width: 17%;
+}
+.teacher-profiles {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+}
+
+.side-by-side {
+  display: flex;
+  padding: 50px 100px;
+  background-color: blueviolet;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-block {
+  text-align: center;
+  text-align: justify;
+  padding-left: 50px;
+  color: white;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 0 70px;
+}
+
+.purple {
+  color: blueviolet;
+}
+
+.second-section h2 {
+  text-align: center;
+}
+
+.smile-images {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  text-align: left;
+  position: relative;
+}
+
+.smile-images-container {
+  justify-content: space-around;
+  display: flex;
+}
+
+.profile-sumary {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: blueviolet;
+}
+.profile-sumary h4 {
+  margin: 5px 0;
+}
+.profile-sumary img {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+.play-btn {
+  position: absolute;
+  width: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14%;
+}
+
+.stars-container {
+  display: flex;
+}
+.stars-container .fa-star {
+  color: blueviolet;
+}
+
+.stars-and-time {
+  display: flex;
+  color: blueviolet;
+
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-sumary {
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  float: right;
+}
+.social-media i {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 24px;
+  color: black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.third-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #071629;
+  padding: 80px 10px;
+}
+
+.third-section h2 {
+  text-align: center;
+}
+
+.third-section-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 20%;
+  text-align: center;
+  color: white;
+}
+
+.third-images {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  display: flex;
+  padding: 20px;
+  background-color: #071629;
+}
+.third-images .container {
+  display: flex;
+}
+
+.third-images img {
+  width: 50px;
+  height: 50px;
+}
+
+.third-images h3 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.third-images p {
+  font-size: 1em;
+  color: #666;
+}
+
+.third-images button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.fourth-section h2 {
+  font-size: 46px;
+}
+.fourth-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 50px;
+}
+
+.faq-parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 70px;
+}
+
+.faq-child {
+  width: 38%;
+  text-align: left;
+  padding-right: 120px;
+  padding-top: 20px;
+}
+
+.faq-child p {
+  color: #666666c0;
+}
+
+.fifth-section {
+  background-color: #071629;
+  padding: 60px 40px;
+  padding-bottom: 30px;
+  padding-right: 100px;
+}
+
+.fifth-section p {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+}

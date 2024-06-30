@@ -1,212 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/4a2b055604.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/4a2b055604.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Document</title>
-    <link href="styles.css" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <nav>
-            <img src="data:image/jpeg;base64,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" alt="logo">
-          
-            <ul>
-                <li><a href="#">COURSE</a></li>
-                <li><a href="#">PRICING</a></li>
-                <li><a href="#">LOGIN</a></li>
-            </ul>
-        </nav>
-        
-    </header>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
     <main>
-        <section>
-            <div>
-                <h1>Get schooled</h1>
-                <span>SMILES</span>
-                <span>GRIN</span>
-                <span>LAUGH</span>
-                <button>REGISTER FOR FREE</button>
-            </div>
-            <div>
-                <h2>Learn from the pros</h2>
-                <div>
-                    <div>
-                        <img src="./images/1 (3).png" alt="">
-                        <h3>Phillip Massey</h3>
-                        <p>« Smile of the year » 2018 - 2019</p>
-                    </div>
-                    <div>
-                        <img src="./images/6.png" alt="">
-                        <h3>Nannie Lawrence</h3>
-                        <p>Best « little smile » 2017</p>
-                    </div>
-                    <div>
-                        <img src="./images/7.png" alt="">
-                        <h3>Bruce Walters</h3>
-                        <p>Best « Friend Smile » live performance 2019</p>
-                    </div>
-                    <div>
-                        <img src="./images/8.png" alt="">
-                        <h3>Henry Hughes</h3>
-                        <p>« 24h smiles » winner 2016 - 2019</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="./images/Bitmap.png" alt="image">
-            </div>
-            <div>
-                <blockquote>« Those tutorials are concise and go straight to the point. I can’t think of a better place to learn smiling. And it’s so fun!</blockquote>
-                <h3>NAME</h3>
-                <P>weather presenter</P>
-            </div>
-        </section>
-        <section>
-            <h2>Most popular tutorials</h2>
-            <div>
-                <img src="./images/Bitmap (1).png" alt="">
-                <h3>Diagonal Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                </div>
-                <p>8 min</p>
-            </div>
-            <div>
-                <img src="./images/Bitmap (4).png" alt="">
-                <h3>Happy Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                </div>
-                <p>8 min</p>
-            </div>
-            <div>
-                <img src="./images/Bitmap (3).png" alt="">
-                <h3>Natural Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                </div>
-                <p>8 min</p>
-            </div>
-            <div>
-                <img src="./images/Bitmap (2).png" alt="">
-                <h3>Sad Smile</h3>
-                <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                <div>
-                    <img src="./images/1 (3).png" alt="">
-                    <h4>Phillip Massey</h4>
-                </div>
-                <div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                    <div><i class="fa-solid fa-star"></i></div>
-                </div>
-                <p>8 min</p>
-            </div>
-        </section>
-        <section>
-            <h2>Free membership</h2>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <div>
-                <img src="./images/smile.svg" alt="">
-                <h3>Lorem Ipsum</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </div>
-            <button>REGISTER FOR FREE</button>
-        </section>
-        <section>
-            <h2>F.A.Q</h2>
-            <div>
-                <div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
+      <div class="nav-and-section1">
+        <header>
+          <nav>
+            <img id="logo" src="./images/logo.png" alt="logo" />
 
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                    <div>
-                        <h3>How does this work?</h3>
-                    </div>
-                    <div>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
+            <ul>
+              <li><a href="#">COURSE</a></li>
+              <li><a href="#">PRICING</a></li>
+              <li><a href="#">LOGIN</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="first-section">
+          <div class="main-catch">
+            <h1 class="main-heading">Get schooled</h1>
+            <div class="heading-catch">
+              <span>SMILES</span>
+              <span>GRIN</span>
+              <span>LAUGH</span>
             </div>
+            <button class="register-btn">REGISTER FOR FREE</button>
+          </div>
+          <div class="teachers">
+            <h2 class=""><span>Learn</span> from the pros</h2>
+            <div class="teacher-profiles">
+              <div>
+                <img src="./images/1.png" alt="" />
+                <h3>Phillip Massey</h3>
+                <p>« Smile of the year » 2018 - 2019</p>
+              </div>
+              <div>
+                <img src="./images/3.png" alt="" />
+                <h3>Nannie Lawrence</h3>
+                <p>Best « little smile » 2017</p>
+              </div>
+              <div>
+                <img src="./images/4.png" alt="" />
+                <h3>Bruce Walters</h3>
+                <p>Best « Friend Smile » live performance 2019</p>
+              </div>
+              <div>
+                <img src="./images/5.png" alt="" />
+                <h3>Henry Hughes</h3>
+                <p>« 24h smiles » winner 2016 - 2019</p>
+              </div>
+            </div>
+          </div>
         </section>
+      </div>
+      <section class="side-by-side">
+        <div>
+          <img src="./images/5.png" alt="image" />
+        </div>
+        <div class="text-block">
+          <p>
+            « Those tutorials are concise and go straight to the point. I can’t
+            think of a better place to learn smiling. And it’s so fun!
+          </p>
+          <h3>PERSON NAME</h3>
+          <p>weather presenter</p>
+        </div>
+      </section>
+
+      <section class="second-section">
+        <h2>Most <span class="purple">popular</span> tutorials</h2>
+        <div class="smile-images-container">
+          <div class="smile-images">
+            <img src="./images/play.png" class="play-btn" alt="play" />
+            <img src="./images/9.png" alt="" />
+            <h3>Diagonal Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="profile-sumary">
+              <img src="./images/1.png" alt="rating" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="stars-and-time">
+              <div class="stars-container">
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
+          </div>
+          <div class="smile-images">
+            <img src="./images/play.png" class="play-btn" alt="play" />
+
+            <img src="./images/6.png" alt="" />
+            <h3>Happy Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="profile-sumary">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="stars-and-time">
+              <div class="stars-container">
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
+          </div>
+          <div class="smile-images">
+            <img src="./images/play.png" class="play-btn" alt="play" />
+            <img src="./images/8.png" alt="" />
+            <h3>Natural Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="profile-sumary">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="stars-and-time">
+              <div class="stars-container">
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
+          </div>
+          <div class="smile-images">
+            <img src="./images/play.png" class="play-btn" alt="play" />
+            <img src="./images/7.png" alt="" />
+            <h3>Sad Smile</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consect adipiscing elit, sed do
+              eiusmod.
+            </p>
+            <div class="profile-sumary">
+              <img src="./images/1.png" alt="" />
+              <h4>Phillip Massey</h4>
+            </div>
+            <div class="stars-and-time">
+              <div class="stars-container">
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+                <div><i class="fa-solid fa-star"></i></div>
+              </div>
+              <p>8 min</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="third-section">
+        <h2><span class="purple">Free</span> membership</h2>
+        <div class="third-images">
+          <div class="third-section-items">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="third-section-items">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="third-section-items">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="third-section-items">
+            <img src="./images/smile.png" alt="" />
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+
+        <button class="register-btn">REGISTER FOR FREE</button>
+      </section>
+
+      <section class="fourth-section">
+        <h2>F.A.Q</h2>
+        <div class="faq-parent">
+          <div class="faq-child">
+            <div>
+              <h3>How does this work?</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="faq-child">
+            <div>
+              <h3>How does this work?</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="faq-child">
+            <div>
+              <h3>How does this work?</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="faq-child">
+            <div>
+              <h3>How does this work?</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <section>
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU3-DruKtd9vg7DzUBAmvjobPk8GEJCj89Sg&s" alt="logo">
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-            </div>
-            <p>©smileschool 2020</p>
-        </section>
+      <section class="fifth-section">
+        <div>
+          <img src="images/logo.png" alt="logo" />
+          <div class="social-media">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+        <p>©smileschool 2020</p>
+      </section>
     </footer>
-</body>
+  </body>
 </html>
