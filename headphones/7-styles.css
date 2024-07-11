@@ -1,0 +1,198 @@
+.head {
+  background-image: url("./images/headphones_hero_1.jpg");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.first-section {
+  text-align: center;
+  color: white;
+  margin-top: 270px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  object-fit: contain;
+}
+
+.action-btn {
+  color: white;
+  background-color: tomato;
+  padding: 15px 12px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 0;
+}
+
+.second-section h2 {
+  text-align: center;
+  margin-top: 150px;
+}
+
+.second-text {
+  text-align: center;
+}
+
+.second-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 1000px;
+  margin-top: 80px;
+}
+
+.second-image div {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.second-image div:hover {
+  transform: scale(1.1) rotate(5deg);
+  opacity: 0.9;
+}
+
+.third-section h3 {
+  text-align: center;
+  color: white;
+}
+
+.third-section {
+  color: white;
+  background-image: url("./images/headphones_hero_2.jpg");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.third img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  margin-top: 70px;
+}
+
+.third-text {
+  text-align: center;
+}
+
+.third div {
+  width: 200%;
+}
+
+.third div img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.third div img:hover {
+  transform: scale(1.1) rotate(-5deg);
+  opacity: 0.9;
+}
+
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+}
+
+.fourth-section {
+  text-align: center;
+}
+
+.fourth-section label {
+  width: 10%;
+  text-align: left;
+}
+
+.fourth-section input,
+.fourth-section button {
+  width: 50%;
+  margin-bottom: 10px;
+}
+
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.fourth-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  max-width: 400px;
+}
+
+.fourth-section label {
+  width: 100%;
+  text-align: left;
+}
+
+.fourth-section input,
+.fourth-section button {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.fourth-section div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fifth-section {
+  background-color: #071629;
+}
+
+.fifth-section p {
+  margin-top: 40px;
+  text-align: center;
+  color: #666;
+}
+
+.social-media {
+  display: flex;
+  gap: 30px;
+  float: right;
+}
+
+.second-image div,
+.third div img {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

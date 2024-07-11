@@ -1,0 +1,140 @@
+.head {
+  background-image: url("./images/headphones_hero_1.jpg");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.first-section {
+  text-align: center;
+  color: white;
+  margin-top: 270px; /* Added margin to create space between header and section */
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  object-fit: contain;
+}
+.action-btn {
+  color: white;
+  background-color: tomato;
+  padding: 15px 12px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 0;
+}
+.second-section h2 {
+  text-align: center;
+  margin-top: 150px;
+}
+.second-text {
+  text-align: center;
+}
+.second-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.second-image {
+  width: 1000px;
+  margin-top: 80px;
+}
+.third-section h3 {
+  text-align: center;
+  color: white;
+}
+.third-section {
+  color: white;
+}
+.third-section {
+  background-image: url("./images/headphones_hero_2.jpg");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+}
+.third img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+  margin-top: 70px;
+}
+.third-text {
+  text-align: center;
+}
+.third div {
+  width: 200%;
+}
+.third {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  text-align: center;
+}
+
+.fourth-section {
+  text-align: center;
+}
+.fourth-section label {
+  width: 10%;
+  text-align: left; /* Align labels to the left */
+}
+
+.fourth-section input,
+.fourth-section button {
+  width: 50%; /* Make inputs and buttons take full width */
+  margin-bottom: 10px; /* Add space between form elements */
+}
+.fourth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px; /* Adjust padding as needed */
+}
+
+.fourth-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%; /* Make the form width 100% */
+  max-width: 400px; /* Add a max-width to control the form width */
+}
+
+.fourth-section label {
+  width: 100%;
+  text-align: left; /* Align labels to the left */
+}
+
+.fourth-section input,
+.fourth-section button {
+  width: 100%; /* Make inputs and buttons take full width */
+  margin-bottom: 10px; /* Add space between form elements */
+}
+
+.fourth-section div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

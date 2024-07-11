@@ -1,0 +1,60 @@
+.head {
+  background-image: url("./images/headphones_hero_1.jpg");
+  padding: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.first-section {
+  text-align: center;
+  color: white;
+  margin-top: 270px; /* Added margin to create space between header and section */
+  width: 100%;
+  max-width: 1200px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+#logo {
+  object-fit: contain;
+}
+.action-btn {
+  color: white;
+  background-color: tomato;
+  padding: 15px 12px;
+  border-radius: 20px;
+  margin-top: 20px;
+  border: 0;
+}
+.second-section h2 {
+  text-align: center;
+  margin-top: 150px;
+}
+.second-text {
+  text-align: center;
+}
+.second-image {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.second-image {
+  width: 1000px;
+  margin-top: 80px;
+}
